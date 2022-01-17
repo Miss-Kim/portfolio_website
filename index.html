@@ -2,28 +2,46 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+    href="style.css" rel="stylesheet"  type="text/css"
+    />
     <title>Kim Ivanova UX/UI Designer Oslo</title>
+    <!-- add normalize below-->
+
+  
+    <!-- add custom font here-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway:ital,wght@0,200;0,300;0,400;1,100;1,200&display=swap" rel="stylesheet">
+
+    <!-- add style.css file below that's in the css directory-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+   <!-- <style>
+      code {
+        color: #8e8e8a;
+        background-color: #eae7dc;
+      }
+    </style> -->
+   
+
+    <!-- script for svg-->
     <script
       src="https://kit.fontawesome.com/13563b6f15.js"
       crossorigin="anonymous"
-    ></script>
-    <link href="styles/style.css" rel="stylesheet" />
+    > </script>
   </head>
-
-  <body>
+<!-- inline style example (recommended not to use inline styling)
+  <body style="background-color: lightblue;">
+  <h1>
+    Hello from the <code>style</code> tag</h1>
+    <p>My color is coming from the <code>style.css</code>file</p>
+</body> -->
     <!--for the header-->
     <header>
       <div>
-        <img
-          src="img/logo.jpg"
-          width="150"
-          height="50"
-          text="logo"
-          alt="Web Logo"
-        />
+       <p class="bloglogo">KIM IVANOVA</p>
 
         <nav>
-          <ul>
+          <ul class="navigations">
             <li><a href="index.html">Work</a></li>
             <li><a href="gro.html">Case Study ⌈GRO⌉</a></li>
             <li><a href="about.html">About Kim Ivanova</a></li>
@@ -37,24 +55,26 @@
 
       <div>
         <div>
-          <h3>Hei, I am Kim.</h3>
+      
+         
+          <h4> Hei, I am Kim.</h4> 
+        
 
-          <p>
-            <span style="color: goldenrod"
-              >UX Designer / Frontend developer based in Oslo</span
-            >. <br />I design products because I am passionate about creating
-            beautiful and smart design solutions.
-          </p>
+          <p class="intro">
+            UX Designer / Frontend developer based in Oslo. <br />I design
+            products because I am passionate about creating beautiful and smart
+            design solutions.
+          </p> 
         </div>
       </div>
       <br />
       <h2>Latest Project</h2>
       <div>
-        <h4>Case Study ⌈GRO⌉</h4>
+        <h3>Case Study ⌈GRO⌉</h3>
         <picture>
-          <source srcset="img/gro/gro_small@2.png" media="(max-width:767px)" />
+          <source srcset="img/gro/gro_large@1.png" media="(max-width:767px)" />
           <img
-            src="img/gro/gro_large@1.png"
+            src="img/gro/gro_small@2.png"
             width="600"
             height="480"
             alt="GRO Hero Mockup"
@@ -80,7 +100,8 @@
         </p>
         <!-- end paragraph -->
         <!-- open paragraph -->
-        <h4>My Role</h4>
+     <aside class="skillsandtools">
+       <h4>My Role</h4>
         UX Research, UX/UI Designer
 
         <h4>Type of Project</h4>
@@ -103,6 +124,7 @@
           <li>FIGMA</li>
           <li>Usability Hub</li>
         </ul>
+      </aside>
         <!-- end paragraph -->
       </div>
       <!-- end second column -->
@@ -114,7 +136,7 @@
           <!-- open first column (used for image) -->
           <picture>
             <source
-              srcset="img/lingu/lingu_large.png"
+              srcset="/img/lingu_large.png"
               media="(max-width:767px)"
             />
             <img
@@ -140,8 +162,7 @@
             Write a line or 2 mentioning skills used (optional).
           </p>
           <!-- end paragraph -->
-          <a href="">Read more</a
-          ><!-- button or link label -->
+          <a href="#" class="button">Read more</a><!-- button or link label -->
         </div>
         <!-- end second column -->
       </div>
@@ -151,10 +172,10 @@
       <div>
         <h2>Get in Touch</h2>
         <p>
-          Do you like my work and want to discuss opportuni"ties? Please get in
+          Do you like my work and want to discuss opportunities? Please get in
           touch. Call:<a href="tel: +47 12345678"> +47 12345678</a> or skype me
           at <a href="skype:hello.KIM">hello.kim</a>. Prefer sending an
-          <a href="mailto:myname@gmail.com">Email</a>?
+          <a href="mailto:myname@gmail.com" class="button contact" >Email</a>?
         </p>
       </div>
 
@@ -174,7 +195,7 @@
           <i class="fas fa-heart"></i>
         </a>
 
-        <p>Copyright &copy; by KIM 2020</p>
+        <p class="copyright">Copyright &copy; by KIM 2020</p>
       </div>
     </footer>
   </body>

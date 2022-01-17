@@ -2,7 +2,27 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
     <title>Kim Ivanova UX/UI Designer Oslo</title>
+    <!-- add normalize below-->
+
+    <!-- add custom font here-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway:ital,wght@0,200;0,300;0,400;1,100;1,200&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- add style.css file below that's in the css directory-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <style>
+      code {
+        color: #8e8e8a;
+        background-color: #eae7dc;
+      }
+    </style>
+
+    <!-- script for svg-->
     <script
       src="https://kit.fontawesome.com/13563b6f15.js"
       crossorigin="anonymous"
@@ -12,17 +32,13 @@
     <!--for the header-->
     <header>
       <div>
-        <img
-          src="img/logo.jpg"
-          width="150"
-          height="50"
-          text="logo"
-          alt="Web Logo"
-        />
+        <div>
+          <p class="bloglogo">KIM IVANOVA</p>
 
         <nav>
-          <ul>
+          <ul class="navigations">
             <li><a href="index.html">Work</a></li>
+           <li><a href="gro.html">Case Study ⌈GRO⌉</a></li>
             <li><a href="about.html">About Kim</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -112,7 +128,7 @@
           <li>GitHub</li>
         </ul>
       </div>
-      <a href="./img/files/cv.pdf" download>Download my CV</a>
+      <a href="./img/files/cv.pdf" download>Download My CV</a>
     </main>
     <footer id="contact">
       <div>
@@ -121,7 +137,7 @@
           Do you like my work and want to discuss opportunities? Please get in
           touch. Call:<a href="tel: +47 12345678"> +47 12345678</a> or skype me
           at <a href="skype:hello.KIM">hello.kim</a>. Prefer sending an
-          <a href="mailto:myname@gmail.com">Email</a>?
+          <a href="mailto:myname@gmail.com" class="button contact" >Email</a>?
         </p>
       </div>
 
@@ -141,7 +157,7 @@
           <i class="fas fa-heart"></i>
         </a>
 
-        <p>Copyright &copy; by KIM 2020</p>
+        <p class="copyright">Copyright &copy; by KIM 2020</p>
       </div>
     </footer>
   </body>

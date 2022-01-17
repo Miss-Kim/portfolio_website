@@ -1,0 +1,120 @@
+/*<head>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+Eggshellwhite, dark vanilla and taupegray with jellybeanred highlights come together in this minimalist yet warm and inviting site.*/
+
+/*colors used:
+Primary Color (eggshellwhite): #eae7dc;
+secondary color (dark vanilla): #d8c3a5 ;
+Text color(taupegray):8e8e8a#;
+button frame (taupegray): #8e8e8e;
+active state / social media (jellybeanred): #e85a4f */
+
+header {
+  background-color: #eae7dc;
+  border: 0.5px solid #8e8d8a;
+}
+.bloglogo {
+  font-family: "Raleway", sans-serif;
+  font-style: initial;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.navigations {
+  list-style: none;
+  color: #8e8e8e;
+}
+main {
+  background-color: #eae7dc;
+  border: 0.5px solid #eae7dc;
+}
+body {
+  background-color: rgb(234, 231, 220);
+  font-family: "Raleway", sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #8e8e8a;
+}
+.intro {
+  text-align: center;
+}
+.skillsandtools h4 {
+  font-size: 20px;
+  font-style: italic;
+
+  text-align: left;
+  color: #8e8e8e;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.4;
+}
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+  text-align: center;
+}
+img {
+  width: 100%;
+}
+a {
+  color: rgb(142, 142, 138);
+  text-decoration: none; /* No underlining */
+}
+a:hover,
+a.focus {
+  color: rgb(232, 90, 79);
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+a:visited {
+  /* visited link */
+  color: #8e8e8e;
+}
+a:active {
+  /* selected link */
+  color: #e85a4f;
+}
+
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #eae7dc;
+  color: #8e8d8a; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 5px solid rgb(232, 90, 79); /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+.button.contact:hover {
+  background-color: #eae7dc;
+  color: #8e8d8a;
+  text-transform: uppercase;
+  border: 2px solid rgb(232, 90, 79);
+}
+.copyright {
+  font-size: 12px;
+}
