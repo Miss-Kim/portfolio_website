@@ -16,12 +16,11 @@ header {
   background-color: #ccc9bf;
   border: 0.5px solid #ccc9bf;
   grid-column: 600px;
+  font-family: "Raleway", sans-serif;
+  color: #8e8d8a;
 }
-.bloglogo {
-  font-family: "Sacramento", cursive;
-  color: #9c5048;
-  font-size: 34px;
-  font-weight: 800;
+img {
+  width: 100%;
 }
 
 .wrapper {
@@ -113,6 +112,27 @@ a:active {
   text-decoration: none;
 }
 .button.contact:hover {
+  background-color: #eae7dc;
+  color: #8e8d8a;
+  text-transform: uppercase;
+  border: 2px solid rgb(232, 90, 79);
+}
+
+.download {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #eae7dc;
+  color: #8e8d8a; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 5px solid #e85a4f; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+.download:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+.download.contact:hover {
   background-color: #eae7dc;
   color: #8e8d8a;
   text-transform: uppercase;
