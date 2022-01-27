@@ -1,40 +1,33 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta
-      name="author"
-      content="Kim Ivanova"
-      <meta
-      http-eqiv="Content-Type"
-      content="text/html"
-      ;
-      charset="utf-8"
-    />
+    <title>
+      Kim Ivanova UX/UI Designer turned Frontend Developer Oslo,Norway
+    </title>
+
     <!--ICONS / SVGs-->
+    <link href="img/favicon_io/favicon-32x32.png" rel="shortcut icon">
+
+    <!--fonts-->
+    <link
+  href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway:ital,wght@0,200;0,300;0,400;1,100;1,200&display=swap"
+  rel="stylesheet"
+/>
     <script
     src="https://kit.fontawesome.com/13563b6f15.js"
     crossorigin="anonymous"
   ></script>
-  <link
-  href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway:ital,wght@0,200;0,300;0,400;1,100;1,200&display=swap"
-  rel="stylesheet"
-/>
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>
-      Kim Ivanova UX/UI Designer turned Frontend Developer Oslo,Norway
-    </title>
-    <link href="img/favicon_io/favicon-32x32.png" rel="shortcut icon">
-
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> <!--favicon-->
+  
+  <!--styles-->
+<link href="css/style.css" rel="stylesheet" type="text/css" >
   </head>
 
-  <body class="welcome">
+  <body>
     <!-- for the header-->
     <header>
-      <div>
+      <div class="container">
         <p><a href="#">Kim Ivanova</a> </p></div>
       <nav>
         <ul>
@@ -45,8 +38,8 @@
       </ul>
       </nav>  </header>
     <!--for the hero section-->
-    <div>
-      <div>
+    <div id="hero">
+      <div class="container">
         <h1>Hi, I am Kim.</h1>
         <span>I'm a UX researcher and designer from Oslo.</span>
       </div>
@@ -58,13 +51,14 @@
     <h1>Recent Projects</h1>
     <p>The frist paragraph.</p>
     <!--for your projects-->
-    <div>
-      <div>
+    <div id="work">
+      <div class="container">
         <!--wrapper-->
         <h2>My Projects</h2>
-      </div><div>
+      </div><div class="row">
         <!--rows for columns-->
         <div>
+
           <!--first colum-->
           <picture>
             <source
@@ -83,9 +77,9 @@
           <h3>GRO</h3>
           <p>GRO is a responsive web app.</p>
           <p>Duration is 5 months.</p>
-          <a href="#" class="button">Read More</a>
+          <a href="gro.html" class="button">Read More</a>
         </div>
-      </div> </div> <div>
+      </div> </div> 
       <!--rows for columns-->
       <div>
         <!--first colum-->
@@ -106,13 +100,13 @@
         <h3>LINGU</h3>
         <p>LINGU is an app for toddlers.</p>
         <p>Duration = ongoing.</p>
-        <a href="#" class="button">Read More</a>
-      </div></div>
+        <a href="lingu.html" class="button">Read More</a>
+      </div>
     </div>
     
     <!--For the footer-->
-    <footer id=contact>
-      <div>
+    <div id=contact>
+      <div class="container">
         <h2>Get In Touch</h2>
         <p>Do you like my work and want to discuss opportunities? <br>
         Please get in touch. call:<a href="tel:+471234456" class="button contact">+47 1234456</a> or Skype me at <a href="skype:hello.kim" class="button contact">hello.Kim</a> . Prefer sending an email?   <a href="mailto:kim123@gmail.com" class="button contact">EMAIL</a> </p>
@@ -135,7 +129,7 @@
         </a>
       </div>
     </div>
-    <p class="copyright">Copyright &copy; by KIM 2020</p>
+    <p class="copyright">Copyright &copy; by KIM 2022</p>
     </footer>
   </body>
 </html>
