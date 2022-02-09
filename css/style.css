@@ -12,7 +12,26 @@ Text color(taupegray):8e8e8a#;
 button frame (taupegray): #8e8e8e;
 active state / social media (jellybeanred): #e85a4f */
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #eae7dc;
+  font-family: "lato", sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #8e8e8a;
+}
+
 header {
+  position: fixed;
+  z-index: 4;
   background-color: #ccc9bf;
   border: 0.5px solid #ccc9bf;
   grid-column: 600px;
@@ -24,15 +43,62 @@ header {
   display: inline-block;
   width: 100%;
 }
-.logo {
-  max-width: 250px;
+
+nav ul {
+  list-style-type: none;
 }
-selector {
+
+nav ul li {
+  margin: 0 20px;
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li > a:hover,
+a.focus {
+  color: rgb(232, 90, 79);
+  text-decoration: underline; /* Underlining when hovering over a link */
   display: inline-block;
   position: relative;
   width: 100%;
 }
+nav > ul > li > a:visited {
+  /* visited link */
+  color: #8e8e8e;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+nav > ul > li > a:active {
+  /* selected link */
+  color: #e85a4f;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+.logo {
+  max-width: 250px;
+}
+
 img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/*
+selector {
+  display: inline-block;
+  position: relative;
   width: 100%;
 }
 
@@ -40,13 +106,19 @@ img {
   display: grid;
   grid-template-columns: 400px 400px 400px;
 }
+*/
 
 main {
   background-color: #eae7dc;
   border: 0.5px solid transparent;
-  padding-top: 133px;
+  padding-top: 153px;
   padding: 10px;
   margin: 10px;
+}
+
+.container {
+  padding: 0 15px;
+  max-width: 1200px;
 }
 
 #hero {
@@ -57,14 +129,7 @@ main {
   padding: 10px;
   margin: 10px;
 }
-body {
-  background-color: #eae7dc;
-  font-family: "lato", sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #8e8e8a;
-}
+
 .intro {
   text-align: center;
 }
@@ -75,14 +140,7 @@ body {
   text-align: left;
   color: #8e8e8e;
 }
-nav > ul > li > a {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #4a4a4a;
-  list-style-type: none;
-  padding: 0;
-}
+
 h1,
 h2,
 h3,
@@ -109,34 +167,65 @@ h4 {
   font-weight: 400;
   text-align: center;
 }
+
 img {
   width: 100%;
+  max-width: 100%;
+  height: auto;
 }
+
+@keyframes color-change {
+  from {
+    fill: #edc655;
+  }
+  to {
+    fill: #f76414;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
 a {
   color: rgb(142, 142, 138);
   text-decoration: none; /* No underlining */
-}
-nav > ul > li > a:hover,
-a.focus {
-  color: rgb(232, 90, 79);
-  text-decoration: underline; /* Underlining when hovering over a link */
-  display: inline-block;
-  position: relative;
-  width: 100%;
-}
-nav > ul > li > a:visited {
-  /* visited link */
-  color: #8e8e8e;
-  display: inline-block;
-  position: relative;
-  width: 100%;
-}
-nav > ul > li > a:active {
-  /* selected link */
-  color: #e85a4f;
-  display: inline-block;
-  position: relative;
-  width: 100%;
 }
 
 .button {
@@ -186,6 +275,71 @@ nav > ul > li > a:active {
   padding-bottom: 25px;
   border-bottom: 1px solid #4a4a4a;
 }
+
+footer .social-row {
+  margin-top: 40px;
+}
+
+footer .social {
+  font-size: 48px;
+  margin-right: 15px;
+}
+
 .copyright {
   font-size: 12px;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 10px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .container {
+    margin: 0 auto;
+    padding: 0 0px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    padding-left: 10px;
+    padding-right: 10px;
+    float: left;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 59%;
+  }
+
+  .col-lg-5 {
+    width: 39%;
+  }
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }
