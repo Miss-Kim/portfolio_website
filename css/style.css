@@ -5,14 +5,16 @@
 Eggshellwhite, dark vanilla and taupegray with jellybeanred highlights come together in this minimalist yet warm and inviting site.*/
 
 /*colors used:
-Primary Color (eggshellwhite): #eae7dc;
+Primary Color (eggshellwhite): #fff;
 logo color :#9c5048;
-secondary color (dark vanilla): #d8c3a5 ;
+secondary color (dark vanilla): #fff;
 Text color(taupegray):8e8e8a#;
-button frame (taupegray): #8e8e8e;
+button frame (taupegray): #fff;
 active state / social media (jellybeanred): #e85a4f */
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -20,28 +22,31 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Page Sections*/
 body {
-  background-color: #eae7dc;
-  font-family: "lato", sans-serif;
+  background-color: rgb(212, 211, 211);
+  font-family: "Roboto", sans-serif;
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #8e8e8a;
+  color: rgb(58, 57, 57);
 }
 
 header {
-  position: fixed;
+  position: absolute;
   z-index: 4;
-  background-color: #ccc9bf;
-  border: 0.5px solid #ccc9bf;
+  background-color: rgb(247, 244, 244);
+  border: 0.5px solid rgba(223, 221, 221, 0.479);
   grid-column: 600px;
-  font-family: "Raleway", sans-serif;
-  color: #8e8d8a;
-  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  /*text-align: center;*/
   padding: 10px;
-  margin: 10px;
+  margin-bottom: 10px;
   display: inline-block;
   width: 100%;
+  max-width: 150px;
+  /*min-width: 641px;*/
 }
 
 nav ul {
@@ -57,14 +62,14 @@ nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #4a4a4a;
+  color: #706d6d;
   list-style-type: none;
   padding: 0;
 }
 
 nav > ul > li > a:hover,
 a.focus {
-  color: rgb(232, 90, 79);
+  color: #1b1a1b;
   text-decoration: underline; /* Underlining when hovering over a link */
   display: inline-block;
   position: relative;
@@ -72,14 +77,14 @@ a.focus {
 }
 nav > ul > li > a:visited {
   /* visited link */
-  color: #8e8e8e;
+  color: #706d6d;
   display: inline-block;
   position: relative;
   width: 100%;
 }
 nav > ul > li > a:active {
   /* selected link */
-  color: #e85a4f;
+  color: #706d6d;
   display: inline-block;
   position: relative;
   width: 100%;
@@ -109,7 +114,7 @@ selector {
 */
 
 main {
-  background-color: #eae7dc;
+  background-color: rgba(252, 247, 247, 0.788);
   border: 0.5px solid transparent;
   padding-top: 153px;
   padding: 10px;
@@ -121,13 +126,58 @@ main {
   max-width: 1200px;
 }
 
+/* ...... navigation bar elements */
+.logo {
+  max-width: 125px;
+  max-height: 150px;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+}
+/*--Will override when responsive class is toggled-*/
+
+.navtoggle,
+.navtoggle.responsive li {
+  display: block;
+}
+/*Stylin for menu icon when toggled*/
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1.5px dotted #000;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+main {
+  padding-top: 56px;
+}
+
 #hero {
-  background-color: #ffe4c4;
+  background-color: rgb(252, 247, 247, 0.788);
   padding: 20px 0;
   display: inline-block;
   width: 100%;
   padding: 10px;
   margin: 10px;
+  border: 0.5px solid transparent;
 }
 
 .intro {
@@ -138,14 +188,14 @@ main {
   font-style: italic;
 
   text-align: left;
-  color: #8e8e8e;
+  color: #fff;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.4;
 }
 h1 {
@@ -176,22 +226,22 @@ img {
 
 @keyframes color-change {
   from {
-    fill: #edc655;
+    fill: #e7e2d3;
   }
   to {
-    fill: #f76414;
+    fill: #f3ba9c;
   }
 }
 
 @keyframes color-change {
   0% {
-    fill: #edc655;
+    fill: #e9dfc2;
   }
   50% {
-    fill: #fcffad;
+    fill: #eef0be;
   }
   100% {
-    fill: #f76414;
+    fill: #f0c7b2;
   }
 }
 
@@ -224,18 +274,18 @@ img {
 }
 
 a {
-  color: rgb(142, 142, 138);
+  color: #fff;
   text-decoration: none; /* No underlining */
 }
 
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #eae7dc;
-  color: #8e8d8a; /* needed to override the default link color */
+  background-color: #fff;
+  color: #000; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 5px solid rgb(232, 90, 79); /* width of the border, type, color */
+  border-bottom: 5px solid rgb(231, 175, 171); /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 .button:hover {
@@ -243,20 +293,20 @@ a {
   text-decoration: none;
 }
 .button.contact:hover {
-  background-color: #eae7dc;
-  color: #8e8d8a;
+  background-color: #fff;
+  color: #000;
   text-transform: uppercase;
-  border: 2px solid rgb(232, 90, 79);
+  border: 2px solid rgb(231, 175, 171);
 }
 
 .download {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #eae7dc;
-  color: #8e8d8a; /* needed to override the default link color */
+  color: #000; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 5px solid #e85a4f; /* width of the border, type, color */
+  border-bottom: 5px solid #000; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 .download:hover {
@@ -267,7 +317,7 @@ a {
   background-color: #eae7dc;
   color: #8e8d8a;
   text-transform: uppercase;
-  border: 2px solid rgb(232, 90, 79);
+  border: 2px solid rgb(179, 233, 177);
 }
 
 #work .row {
@@ -294,14 +344,24 @@ Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
   header {
+    max-width: 150px;
     text-align: unset;
     padding: 10px 0 13px;
+    min-width: 641px;
   }
 
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 
   .container {
@@ -313,6 +373,18 @@ Medium devices (640px and larger)
     width: 50%;
   }
 
+  /*.GRO {
+    content: "UX/UI";
+    background-color: yellow;
+    color: #444;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 10px;
+    position: absolute;
+    top: -10px;
+    right: -25px;
+  }*/
   [class*="col-"] {
     padding-left: 10px;
     padding-right: 10px;

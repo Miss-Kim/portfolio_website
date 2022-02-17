@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <i class="fa-solid fa-burger"></i>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>
@@ -29,14 +30,26 @@
     <header>
       <div class="container">
         <p><a href="#">Kim Ivanova</a></p>
-        <nav>
-          <ul>
-            <li><a href="index.html">Projects</a></li>
-            <li><a href="gro.html">⌈GRO⌉</a></li>
-            <li><a href="about.html">About </a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+
+        <div class="navtoggle" id="myNavtoggle">
+          <img class="logo" src="img/logo.svg" alt="John Doe UX UI logo" />|
+          <nav>
+            <ul>
+              <li><a href="index.html">Projects</a></li>
+              <li><a href="gro.html">⌈GRO⌉</a></li>
+              <li><a href="about.html">About </a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                  ><i class="fas fa-bars"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <!--for the hero section-->
@@ -45,7 +58,13 @@
       <div id="hero">
         <div class="container">
           <h1>Hi, I am Kim.</h1>
-          <span>I'm a UX researcher and designer from Oslo.</span>
+          <span
+            ><strong>Hi🙋🏻‍♀️</strong>,
+            <br />
+            <p>
+              I am Kim. I am a UX researcher and a designer from Oslo.
+            </p></span
+          >
 
           <p>
             I design products because I am passionate about creating beautiful
@@ -94,7 +113,7 @@
 
           <div class="row">
             <div class="col-md-6">
-              <picture>
+              <picture class="NEW">
                 <source
                   srcset="img/lingu_large.png"
                   media="(max-width:767px)"
