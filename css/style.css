@@ -24,21 +24,24 @@ html {
 
 /* Page Sections*/
 body {
-  background-color: rgb(212, 211, 211);
-  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: rgb(58, 57, 57);
+  color: #3a3939;
 }
 
+img {
+  width: 100%;
+}
 header {
   position: absolute;
-  z-index: 4;
+  z-index: 1;
   background-color: rgb(247, 244, 244);
   border: 0.5px solid rgba(223, 221, 221, 0.479);
   grid-column: 600px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #000;
   /*text-align: center;*/
   padding: 10px;
@@ -94,12 +97,6 @@ nav > ul > li > a:active {
   max-width: 250px;
 }*/
 
-img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-
 /*
 selector {
   display: inline-block;
@@ -120,7 +117,10 @@ main {
   padding: 10px;
   margin: 10px;
 }
-
+.span {
+  background-color: grey;
+  display: block;
+}
 .container {
   padding: 0 15px;
   max-width: 1200px;
@@ -195,17 +195,19 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Roboto", sans-serif;
-  line-height: 1.4;
+  font-family: "Montserrat", sans-serif;
+  line-height: 2.5;
 }
 h1 {
-  font-size: 2.75em;
-  font-weight: 700;
+  font-size: 2.25em;
+  font-weight: 500;
+  line-height: 3.5;
 }
 
 h2 {
   font-size: 2.25em;
   font-weight: 700;
+  height: auto;
 }
 
 h3 {
@@ -280,23 +282,29 @@ a {
 
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #fff;
+  background-color: #f0e8ec;
   color: #000; /* needed to override the default link color */
-  font-weight: 400;
+  font-weight: 700;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 5px solid rgb(231, 175, 171); /* width of the border, type, color */
-  transition: 0.2s opacity;
+  border-bottom: 2px solid #52283c; /* width of the border, type, color */
+  transition-duration: 0.2s;
+  text-transform: uppercase;
 }
 .button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
-}
-.button.contact:hover {
-  background-color: #fff;
-  color: #000;
+  background-color: #9e798b;
+  color: #fff;
+  border-bottom: 2px solid #3a3939;
   text-transform: uppercase;
-  border: 2px solid rgb(231, 175, 171);
+}
+
+.button.contact:hover {
+  background-color: #9e798b;
+  color: #fff;
+  text-transform: uppercase;
+  border: 2px solid #52283c;
 }
 
 .download {
@@ -320,6 +328,13 @@ a {
   border: 2px solid rgb(179, 233, 177);
 }
 
+#contact {
+  background-color: #d1d1d1;
+  text-align: center;
+  color: #424241;
+  padding: 0.67em;
+}
+
 #work .row {
   margin: 25px 0;
   padding-bottom: 25px;
@@ -335,8 +350,15 @@ footer .social {
   margin-right: 15px;
 }
 
+#about-picture {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
 .copyright {
   font-size: 12px;
+  text-align: center;
 }
 
 /* ==============================
@@ -347,7 +369,7 @@ Medium devices (640px and larger)
     max-width: 150px;
     text-align: unset;
     padding: 10px 0 13px;
-    min-width: 641px;
+    min-width: 100%;
   }
 
   nav {
