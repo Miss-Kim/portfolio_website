@@ -45,8 +45,8 @@ header {
   margin-bottom: 10px;
   display: inline-block;
   width: 100%;
-  max-width: 150px;
-  /*min-width: 641px;*/
+  /* max-width: 150px;
+ min-width: 641px;*/
 }
 
 nav ul {
@@ -72,27 +72,27 @@ a.focus {
   color: #1b1a1b;
   text-decoration: underline; /* Underlining when hovering over a link */
   display: inline-block;
-  position: relative;
+
   width: 100%;
 }
 nav > ul > li > a:visited {
   /* visited link */
   color: #706d6d;
   display: inline-block;
-  position: relative;
+
   width: 100%;
 }
 nav > ul > li > a:active {
   /* selected link */
   color: #706d6d;
   display: inline-block;
-  position: relative;
+
   width: 100%;
 }
 
-.logo {
+/*.logo {
   max-width: 250px;
-}
+}*/
 
 img {
   width: 100%;
@@ -166,9 +166,9 @@ main {
   padding-right: 0;
 }
 
-main {
+/*main {
   padding-top: 56px;
-}
+}*/
 
 #hero {
   background-color: rgb(252, 247, 247, 0.788);
