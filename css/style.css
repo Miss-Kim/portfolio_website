@@ -75,22 +75,16 @@ a.focus {
   color: #1b1a1b;
   text-decoration: underline; /* Underlining when hovering over a link */
   display: inline-block;
-
-  width: 100%;
 }
 nav > ul > li > a:visited {
   /* visited link */
   color: #706d6d;
   display: inline-block;
-
-  width: 100%;
 }
 nav > ul > li > a:active {
   /* selected link */
   color: #706d6d;
   display: inline-block;
-
-  width: 100%;
 }
 
 /*.logo {
@@ -114,7 +108,7 @@ main {
   background-color: rgba(252, 247, 247, 0.788);
   border: 0.5px solid transparent;
   padding-top: 153px;
-  padding: 10px;
+
   margin: 10px;
 }
 .span {
@@ -199,9 +193,10 @@ h4 {
   line-height: 2.5;
 }
 h1 {
-  font-size: 2.25em;
+  font-size: 2em;
   font-weight: 500;
-  line-height: 3.5;
+  line-height: 1.5;
+  text-align: center;
 }
 
 h2 {
