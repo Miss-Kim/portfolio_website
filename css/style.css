@@ -23,13 +23,13 @@ html {
 }
 
 /* Page Sections*/
-body {
-  background-color: #fff;
+body { 
+  background-color: #fbfbfb
   font-family: "Montserrat", sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
+  font-size: 18px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #3a3939;
+  color: #000; 
 }
 
 img {
@@ -38,7 +38,7 @@ img {
 header {
   position: absolute;
   z-index: 1;
-  background-color: rgb(247, 244, 244);
+  background-color: #f7f4f4;
   border: 0.5px solid rgba(223, 221, 221, 0.479);
   grid-column: 600px;
   font-family: "Montserrat", sans-serif;
@@ -105,14 +105,14 @@ selector {
 */
 
 main {
-  background-color: rgba(252, 247, 247, 0.788);
+  background-color: #fbfbfb;
   border: 0.5px solid transparent;
   padding-top: 153px;
 
   margin: 10px;
 }
 .span {
-  background-color: grey;
+  background-color: #fbfbfb;
   display: block;
 }
 .container {
@@ -289,14 +289,14 @@ a {
 .button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
-  background-color: #9e798b;
+  background-color:#936B7E;
   color: #fff;
   border-bottom: 2px solid #3a3939;
   text-transform: uppercase;
 }
 
 .button.contact:hover {
-  background-color: #9e798b;
+  background-color: #936B7E;
   color: #fff;
   text-transform: uppercase;
   border: 2px solid #52283c;
