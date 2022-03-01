@@ -1,0 +1,783 @@
+/*<head>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+Eggshellwhite, dark vanilla and taupegray with jellybeanred highlights come together in this minimalist yet warm and inviting site.*/
+
+/*colors used:
+background: #1a1b1b;
+  border: #f3ecee;
+  button visited #c08c9b;
+  text: #f5f8ed;
+  --dk-pink: #b01d4f;
+  button: #df798b;
+  --lt-pink: #aa2441;*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Page Sections*/
+body {
+  background-color: #1a1b1b;
+  color: #f5f8ed;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.3;
+  font-size: 16px;
+}
+img {
+  width: 100%;
+}
+hr {
+  border: 1px solid var(--med-turq);
+  width: 270px;
+  margin: 0 auto;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: var(--wt-text);
+}
+
+.gridbox {
+  display: grid;
+}
+
+/*header and nav*/
+header {
+  position: absolute;
+  z-index: 1;
+  background-color: #1a1b1b;
+  border: 0.5px solid #f3ecee;
+  grid-column: 600px;
+  font-family: "Montserrat", sans-serif;
+  color: #f5f8ed;
+
+  padding: 10px;
+  margin: 0 auto;
+  display: inline-block;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  margin: 0 20px;
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #f5f8ed;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li > a:hover,
+a.focus {
+  color: #1b1a1b;
+  text-decoration: underline; /* Underlining when hovering over a link */
+  display: inline-block;
+}
+nav > ul > li > a:visited {
+  /* visited link */
+  color: #706d6d;
+  display: inline-block;
+}
+nav > ul > li > a:active {
+  /* selected link */
+  color: #706d6d;
+  display: inline-block;
+}
+/*main*/
+
+main {
+  background-color: #1a1b1b;
+  border: 0.5px solid transparent;
+  padding-top: 153px;
+
+  margin: 10px;
+}
+.span {
+  background-color: #1a1b1b;
+  display: block;
+}
+.container {
+  padding: 0 15px;
+  max-width: 1200px;
+}
+/* ...... navigation bar elements */
+/* custom logo sizing */
+.logo {
+  max-width: 150px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 2.5em;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li > a {
+  display: inline-block;
+  padding: 0 15px;
+  color: #f5f8ed;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+main {
+  padding-top: 119px;
+}
+
+.navLinks {
+  padding: 5px;
+}
+
+.navLinks:hover,
+.navLinks:focus {
+  color: #7051ef;
+  background-color: #1a1b1b;
+  border-radius: 10px;
+}
+
+.navLinks:visited {
+  text-decoration: underline;
+  /* visited link */
+  /* color: #ff7f50; */
+  /* We suggest using a different color here */
+  /* color: gray; */
+}
+
+.navLinks:active {
+  /* selected link */
+  color: #7051ef;
+  font-weight: 700;
+}
+
+/*main {
+    padding-top: 56px;
+  }*/
+
+h1,
+h2,
+h3,
+h4,
+p {
+  font-family: "Montserrat", sans-serif;
+  line-height: 2.5;
+  margin: 20px;
+}
+h1 {
+  font-size: 2em;
+  font-weight: 500;
+
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  from {
+    fill: #e7e2d3;
+  }
+  to {
+    fill: #f3ba9c;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    fill: #e9dfc2;
+  }
+  50% {
+    fill: #eef0be;
+  }
+  100% {
+    fill: #f0c7b2;
+  }
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+a {
+  color: #f5f8ed;
+  text-decoration: none; /* No underlining */
+}
+
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #df798b;
+  color: #f5f8ed; /* needed to override the default link color */
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #f3ecee; /* width of the border, type, color */
+  transition-duration: 0.2s;
+  text-transform: uppercase;
+}
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+  background-color: #df798b;
+  color: #f5f8ed;
+  border-bottom: 2px solid #f3ecee;
+  text-transform: uppercase;
+}
+
+.button.contact:hover {
+  background-color: #df798b;
+  color: #f5f8ed;
+  text-transform: uppercase;
+  border: 2px solid #f3ecee;
+}
+
+.download {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #df798b;
+  color: #f5f8ed; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 5px solid #f3ecee; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+.download:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+.download.contact:hover {
+  background-color: #1a1b1b;
+  color: #f5f8ed;
+  text-transform: uppercase;
+  border: 2px solid #f3ecee;
+}
+
+#work.row {
+  margin: 25px 0;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #f3ecee;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+}
+
+footer h2 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+footer .social-media p {
+  margin-bottom: 0;
+}
+
+footer .social-media a {
+  color: var(--med-turq);
+  text-decoration: none;
+}
+
+footer .social-media a:hover,
+footer .social-media a:active {
+  color: var(--lt-turq);
+  text-decoration: none;
+}
+
+footer a i {
+  font-size: 25px;
+  padding: 20px;
+}
+
+footer .copyright {
+  font-size: 0.65em;
+}
+/*Footer ends*/
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.vector-animation {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.imgWrapper {
+  max-width: 390px;
+  margin: auto;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+}
+
+/* our hamburger menu */
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  padding-right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #f3ecee;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+/*abut pge*/
+/* About page */
+#about p,
+#about ul {
+  line-height: 1.4;
+}
+
+#about .flexbox.title {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 300px;
+  background-color: var(--lt-pink);
+  border-radius: 7px;
+  align-items: center;
+  background: linear-gradient(0deg, #1a1b1b, #df798b);
+}
+
+#about .headshot {
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px 0 0 10px;
+}
+
+#about .headshot img {
+  height: 250;
+  width: 250;
+  left: 0%;
+  display: block;
+  position: relative;
+}
+
+#about {
+  padding-right: 37px;
+  right: 0%;
+  display: block;
+  position: relative;
+}
+
+#about .intro h1,
+#about .intro h3 {
+  color: var(--med-turq);
+}
+
+#about .intro h1 {
+  margin: 0 0 15px;
+}
+
+#about .button-CV {
+  margin: 20px 0 0;
+  position: center;
+}
+
+#about main h2 {
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+#about .skills h3 {
+  text-align: left;
+  padding-left: 20px;
+  margin: 15px 0 5px;
+}
+
+#about .skills .flexbox {
+  justify-content: center;
+  padding-left: 100px;
+}
+
+#about .skills ul {
+  margin: 0px;
+}
+
+/* Medium devices (1024px or smaller) */
+@media only screen and (max-width: 1024px) {
+  #about .flexbox.title {
+    height: 335px;
+  }
+
+  #about .headshot {
+    height: 220px;
+  }
+
+  #about .headshot img {
+    height: 220px;
+    width: auto;
+    margin-left: 189;
+    left: 50%;
+  }
+
+  #about .container.about {
+    padding: 10px 15px 0;
+  }
+
+  #about .intro {
+    padding: 0 32px 0 10px;
+  }
+
+  #about .intro h1 {
+    margin-bottom: 13px;
+  }
+
+  #about .story h2 {
+    margin: 30px 0 5px;
+  }
+
+  #about .skills .flexbox {
+    justify-content: space-evenly;
+    padding-left: 0;
+  }
+
+  #about main {
+    margin-bottom: 20px;
+  }
+}
+
+/* Small devices (640px and smaller) */
+@media only screen and (max-width: 640px) {
+  #about .flexbox.title {
+    flex-direction: column-reverse;
+    border-radius: 7px;
+    height: unset;
+  }
+
+  #about .headshot {
+    height: unset;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  #about .headshot picture {
+    display: inline-grid;
+  }
+
+  #about .headshot img {
+    height: auto;
+    width: 100%;
+    margin-left: 0;
+    position: relative;
+    left: 0;
+    border-radius: 0 0 7px 7px;
+    border-top: 2px solid var(--med-turq);
+  }
+
+  #about .intro h1 {
+    margin-top: revert;
+  }
+
+  #about .intro {
+    padding: 0 30px;
+  }
+
+  #about .skills {
+    padding-left: unset;
+    text-align: center;
+  }
+
+  #about .skills h3 {
+    text-align: center;
+    padding-left: 0;
+    color: var(--lt-pink);
+  }
+
+  #about .skills ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+}
+
+/*about page ends*/
+
+#project {
+  padding-bottom: 25px;
+  border-bottom: 0px solid #f3ecee;
+  display: inline-block;
+  width: 100%;
+}
+
+#process {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #f3ecee;
+  display: inline-block;
+  width: 100%;
+}
+
+#contact {
+  background-color: #1a1b1b;
+  text-align: center;
+  color: #f5f8ed;
+  padding: 0.67em;
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 0px solid #f3ecee;
+  display: inline-block;
+  width: 100%;
+}
+
+#work svg {
+  width: 100%;
+  height: auto;
+}
+
+#hero {
+  background-color: #1a1b1b;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+#hero h1 {
+  text-align: center;
+  /* Centers text */
+  margin: 0;
+  padding: 0.67em 0;
+}
+
+#hero span {
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
+.col-sm-12 {
+  width: 100%;
+}
+
+/* ==============================
+Medium
+  devices
+  (640px and larger)
+  =================================
+  */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  .logo {
+    min-width: 250px;
+    height: auto;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+    position: relative;
+  }
+
+  main {
+    padding-top: 98px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  #about-page h3 {
+    margin-top: 0;
+  }
+
+  #about-page h4 {
+    margin-top: 20px;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
