@@ -1,18 +1,3 @@
-/*<head>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-
-Eggshellwhite, dark vanilla and taupegray with jellybeanred highlights come together in this minimalist yet warm and inviting site.*/
-
-/*colors used:
-background: #1a1b1b;
-  border: #f3ecee;
-  button visited #c08c9b;
-  text: #f5f8ed;
-  --dk-pink: #b01d4f;
-  button: #df798b;
-  --lt-pink: #aa2441;*/
-
 * {
   box-sizing: border-box;
 }
@@ -34,28 +19,32 @@ img {
   width: 100%;
 }
 hr {
-  border: 1px solid var(--med-turq);
+  border: 1px solid #f3ecee;
   width: 270px;
-  margin: 0 auto;
+  margin: 30 auto;
 }
 
 .flexbox {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  color: var(--wt-text);
+  color: #f5f8ed;
 }
 
 .gridbox {
   display: grid;
 }
 
+.imgWrapper {
+  max-width: 390px;
+  margin: auto;
+}
 /*header and nav*/
 header {
   position: absolute;
   z-index: 1;
   background-color: #1a1b1b;
-  border: 0.5px solid #f3ecee;
+  border: 0.5px solid transparent;
   grid-column: 600px;
   font-family: "Montserrat", sans-serif;
   color: #f5f8ed;
@@ -160,7 +149,7 @@ main {
 
 .navLinks:hover,
 .navLinks:focus {
-  color: #7051ef;
+  color: #aa2441;
   background-color: #1a1b1b;
   border-radius: 10px;
 }
@@ -168,14 +157,14 @@ main {
 .navLinks:visited {
   text-decoration: underline;
   /* visited link */
-  /* color: #ff7f50; */
+  /* color: #aa2441; */
   /* We suggest using a different color here */
   /* color: gray; */
 }
 
 .navLinks:active {
   /* selected link */
-  color: #7051ef;
+  color: #aa2441;
   font-weight: 700;
 }
 
@@ -189,7 +178,7 @@ h3,
 h4,
 p {
   font-family: "Montserrat", sans-serif;
-  line-height: 2.5;
+  line-height: 1.5;
   margin: 20px;
 }
 h1 {
@@ -206,7 +195,7 @@ h2 {
 
 h3 {
   font-size: 1.75em;
-  font-weight: 400;
+  font-weight: 300;
 }
 h4 {
   font-size: 1.35em;
@@ -328,6 +317,8 @@ a {
   border-bottom: 1px solid #f3ecee;
 }
 
+/*Prototype GRO*/
+
 /* Footer */
 footer {
   text-align: center;
@@ -343,13 +334,13 @@ footer .social-media p {
 }
 
 footer .social-media a {
-  color: var(--med-turq);
+  color: #f5f8ed;
   text-decoration: none;
 }
 
 footer .social-media a:hover,
 footer .social-media a:active {
-  color: var(--lt-turq);
+  color: #f5f8ed;
   text-decoration: none;
 }
 
@@ -426,7 +417,7 @@ footer .copyright {
   justify-content: space-between;
   flex-wrap: wrap;
   height: 300px;
-  background-color: var(--lt-pink);
+  background-color: #1a1b1b;
   border-radius: 7px;
   align-items: center;
   background: linear-gradient(0deg, #1a1b1b, #df798b);
@@ -439,23 +430,18 @@ footer .copyright {
 }
 
 #about .headshot img {
-  height: 250;
-  width: 250;
+  height: 150;
+  width: 150;
   left: 0%;
   display: block;
   position: relative;
 }
 
-#about {
+#aboutme {
   padding-right: 37px;
   right: 0%;
   display: block;
   position: relative;
-}
-
-#about .intro h1,
-#about .intro h3 {
-  color: var(--med-turq);
 }
 
 #about .intro h1 {
@@ -467,24 +453,37 @@ footer .copyright {
   position: center;
 }
 
-#about main h2 {
+#about main h1 {
   margin-top: 25px;
   margin-bottom: 5px;
+  text-align: center;
+}
+#aboutme h3 {
+  margin-top: 25px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 10px;
 }
 
 #about .skills h3 {
-  text-align: left;
+  text-align: justify;
   padding-left: 20px;
-  margin: 15px 0 5px;
+  margin: 30px 0 5px;
 }
 
 #about .skills .flexbox {
-  justify-content: center;
+  justify-content: normal;
   padding-left: 100px;
 }
 
 #about .skills ul {
   margin: 0px;
+}
+
+#about .tools h3 {
+  text-align: justify;
+  padding-left: 20px;
+  margin: 15px 0 5px;
 }
 
 /* Medium devices (1024px or smaller) */
@@ -538,24 +537,25 @@ footer .copyright {
     height: unset;
   }
 
-  #about .headshot {
-    height: unset;
-    padding: 0;
-    border-radius: 0;
+  #about .imgWrapper {
+    width: 100%;
+    margin-left: 0;
+    height: auto;
+    position: relative;
+    left: 0;
   }
 
-  #about .headshot picture {
+  #about .imgWrapper picture {
     display: inline-grid;
   }
 
-  #about .headshot img {
+  #about .imgWrapper img {
     height: auto;
     width: 100%;
     margin-left: 0;
     position: relative;
     left: 0;
     border-radius: 0 0 7px 7px;
-    border-top: 2px solid var(--med-turq);
   }
 
   #about .intro h1 {
@@ -587,6 +587,13 @@ footer .copyright {
 
 #project {
   padding-bottom: 25px;
+  border-bottom: 0px solid #f3ecee;
+  display: inline-block;
+  width: 100%;
+}
+/*Prototype GRO*/
+#project.prototype_ {
+  position: relative;
   border-bottom: 0px solid #f3ecee;
   display: inline-block;
   width: 100%;
@@ -666,7 +673,7 @@ Medium
   nav {
     width: auto;
     float: right;
-    margin-top: 4px;
+    margin-top: 1px;
   }
 
   nav > ul {
