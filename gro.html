@@ -58,159 +58,184 @@
     <header>
       <!-- for the header-->
       <div class="container">
-        <div class="topnav" id="myTopnav">
-          <a href="index.html">
-            <img src="img/logo3.png" alt="Logo" class="logo"
-          /></a>
+        <div class="navtoggle" id="myNavtoggle"></div>
+        <a href="index.html">
+          <img src="img/logo3.png" alt="Logo" class="logo"
+        /></a>
 
-          <nav>
-            <ul>
-              <li><a href="index.html">Projects</a></li>
-              <li><a href="gro.html">⌈GRO⌉</a></li>
-              <li><a href="lingu.html">⌈Lingu⌉</a></li>
-              <li><a href="about.html">About </a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li>
-                <a
-                  href="javascript:void(0);"
-                  class="icon"
-                  onclick="menuToggle()"
-                  ><i class="fas fa-bars"></i
-                ></a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Projects</a></li>
+            <li><a href="gro.html">⌈GRO⌉</a></li>
+            <li><a href="lingu.html">⌈Lingu⌉</a></li>
+            <li><a href="about.html">About </a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a href="javascript:void(0);" class="icon" onclick="menuToggle()"
+                ><i class="fas fa-bars"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main>
-      <>
-      <main id="project" class="container">
+      <div id="hero">
+        <div class="container">
           <!-- container/wrapper)-->
-          <!-- Figma prototype)-->
-          <!--  <div class="prototype--contentMiddle--2lFG_">
-            <div class="prototype--viewerContainer--JOiUY">
-              <div id="viewerContainer" class="prototype--viewer--W7Z-5">
-                <div
-                  style="
-                    position: absolute;
-                    inset: 0px;
-                    width: auto;
-                    height: auto;
-                  "
-                >
-                  <div
-                    class="cursor-touch"
-                    style="
-                      position: absolute;
-                      inset: 0px;
-                      width: auto;
-                      height: auto;
-                    "
-                  >
-                    <canvas
-                      width="1186"
-                      height="438"
-                      style="
-                        display: block;
-                        left: 0px;
-                        top: 0px;
-                        width: 593px;
-                        height: 219px;
-                      "
-                    ></canvas>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="prototype--footerContainer--1oDS_">
-              <div class="footer--footer--3rsSh">
-                <div class="footer--debugToolsContainer--28nGF"></div>
-                <div class="footer--frameCounterContainer__OLD--rJtYh">
-                  <div
-                    class="footer--frameCounter__OLD--1jder footer--pill--3AY_G"
-                  >
-                    <span
-                      class="svg-container footer--backIconContainer--W4CCW footer--frameCounterItems--oWRTk"
-                      ><svg
-                        class="svg"
-                        width="8"
-                        height="13"
-                        viewbox="0 0 8 13"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M1 6.5l-.353-.354-.354.354.354.354L1 6.5zM6.647.146l-6 6 .707.708 6-6-.707-.708zm-6 6.708l6 6 .707-.708-6-6-.707.708z"
-                          fill-rule="nonzero"
-                          fill-opacity="1"
-                          fill="#fff"
-                          stroke="none"
-                        ></path></svg
-                    ></span>
-                    <div class="footer--frameCounterText--1iufu">2 / 57</div>
-                    <span
-                      class="svg-container footer--nextIconContainer--1Bu0o footer--frameCounterItems--oWRTk"
-                      ><svg
-                        class="svg"
-                        width="8"
-                        height="13"
-                        viewbox="0 0 8 13"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M6.5 6.5l.354-.354.353.354-.353.354L6.5 6.5zM.854.146l6 6-.708.708-6-6L.854.146zm6 6.708l-6 6-.708-.708 6-6 .708.708z"
-                          fill-rule="nonzero"
-                          fill-opacity="1"
-                          fill="#fff"
-                          stroke="none"
-                        ></path></svg
-                    ></span>
-                  </div>
-                </div>
-                <div class="footer--replayButtonContainer--1AzZp">
-                  <div
-                    class="footer--replayButton__OLD--1iihZ footer--pill--3AY_G"
-                  >
-                    <span class="svg-container"
-                      ><svg
-                        class="svg"
-                        width="24"
-                        height="24"
-                        viewbox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M6.293 11.5l3.354-3.354.707.708L8.207 11H14c1.657 0 3 1.343 3 3v1h-1v-1c0-1.105-.895-2-2-2H8.207l2.147 2.146-.707.708L6.293 11.5z"
-                          fill-rule="evenodd"
-                          fill-opacity="1"
-                          fill="#fff"
-                          stroke="none"
-                        ></path></svg
-                    ></span>
-                    <div>
-                      Restart
-                      <span class="footer--replayKeyboardShortcut--3DnRX"
-                        >R</span
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
-          <picture>
+          <h1>responsive e-wallet ⌈GRO⌉</h1>
+
+          <picture class="imagegro">
             <source
-              srcset="img/gro/portfolio_website.png"
+              srcset="img/gro/gro_large@1.png"
               media="(max-width:767px)"
             />
             <img
-              src="img/gro/Portfolio KIM.png"
-              width="100"
+              src="img/gro/gro_small@2.png"
+              width="600"
               height="480"
-              alt="GRO Hero Mockup"
+              alt="LINGU Hero Mockup"
             />
           </picture>
-        </main>
+          <p>
+            Responsive mobile payment app that allows users to shop both online
+            and in-store (touchless), transfer, receive and split the money with
+            others who don't use the same e-wallet.
+          </p>
+        </div>
+      </div>
+      <div>
+        <!-- row with columns for projects-->
+        <h2>Overview</h2>
+        <p>So,What Exactly is <em>GRO</em>?</p>
+        <p>
+          <em>lingu</em> Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Facilis molestias accusamus, fuga quae distinctio laudantium
+          itaque mollitia nobis voluptas facere quidem saepe odit fugit
+          voluptate? Quia earum eius vitae recusandae.
+        </p>
+        <!--row for columns-->
+
+        <div class="row">
+          <div class="myrole col-md-6">
+            <!--first columns-->
+            <h3>My Role</h3>
+            <p>UX Research, UX/UI Designer</p>
+            <h4>Tools I used:
+            <p><ul>
+              <li>Pen and Paper</li>
+              <li>InVision</li>
+              <li>Balsamiq</li>
+              <li>UsabilityHub</li>
+              <li>Google Docs</li>
+              <li>FIGMA</li>
+            </ul></p></h4>
+          </div>
+        
+          <div class="row">
+          <div class="designprocess col-md-6">
+            <h3>MY DESIGN PROCESS</h3>
+            <h4><ul>
+              <li>Discovery and Research</li>
+              <li>Information Architecture</li>
+              <li>Wireframes and Testing</li>
+              <li>UI Exploration and Testing</li>
+              <li>low-fi to high-fi prototypes</li>
+              <li>Mockups and Presentatition</li>
+              <li>Creating Design System and Style Guide</li>
+            </ul></h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="type col-md-6">
+            <h3>Type of Project</h3>
+            <p>Mobile App, Brand Concept</p>
+         
+        </div>
+
+            <div class="row">
+              <div class="duration col-md-6">
+                <h3>Duration</h3>
+                <p>Five Months</p>
+              </div>
+            </div>
+      </div>
+
+      <!-- Overview Ends-->
+      <div>
+        <div>
+          <!-- row with columns for projects-->
+
+          <h2>Discovery Phase</h2>
+          <h5>PROBLEM STATEMENT</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+            eveniet architecto praesentium doloremque voluptate quisquam quis
+            autem facere numquam totam obcaecati, provident magni excepturi
+            necessitatibus ad error dolorum, quidem iure.
+          </p>
+          <h5>SOLUTIONS</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque
+            modi molestiae ex officiis eos quis suscipit ipsa? Et dolores
+            corporis iure saepe sequi eaque, maiores ratione excepturi minus
+            unde ipsa.
+            <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            odio sed iure atque veniam libero soluta possimus architecto, ipsam
+            corporis fugiat exercitationem, assumenda, ex ratione ad itaque
+            quibusdam natus voluptatibus!
+          </p>
+          <h3>Discovery and Research</h3>
+          <strong>WHO</strong>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reprehenderit quidem libero cumque facilis. Praesentium id dicta est
+            rerum labore vero voluptatibus, reiciendis dolor. Odit soluta
+            eveniet voluptatum voluptatem, officia ipsum.
+          </p>
+          <br />
+          <strong>WHERE</strong>
+          <p>Primary use will mostly be on mobile phone, on the go.</p>
+          <br />
+          <strong>WHEN</strong>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi eius
+            tempore maxime magnam maiores minima, voluptatem fugiat? Odit id
+            officiis eum repudiandae, hic quidem, dolores laborum, unde repellat
+            dicta modi!
+          </p>
+          <br />
+          <strong>WHAT</strong>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            provident sit dignissimos quam vero laborum eum deserunt omnis ex,
+            qui, minima tempore voluptates, libero repellat mollitia dolore?
+            Harum, voluptatem? Dolores.
+          </p>
+          <br />
+          <strong>WHY</strong>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            commodi itaque dolorum ex. Voluptatibus officiis explicabo
+            veritatis, cumque magni, blanditiis exercitationem voluptate nemo
+            expedita nobis similique minima veniam ad esse?
+          </p>
+          <br />
+          <strong>HOW</strong>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+            iure nemo, autem pariatur omnis repellendus modi quae ipsam, id
+            optio eaque et cupiditate cumque adipisci veritatis totam quod
+            delectus quis.
+          </p>
+        </div>
+        <!--Discovery Ends-->
+        <br />
+
+        <!--row for columns-->
+      </div>
+    </main>
     <footer>
       <div id="contact" class="container">
         <h2>Get in Touch</h2>
@@ -248,7 +273,5 @@
     <div class="modal" id="modal"></div>
 
     <script src="js/script.js"></script>
-
   </body>
-
 </html>

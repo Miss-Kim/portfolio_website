@@ -198,9 +198,9 @@ h3 {
   font-weight: 300;
 }
 h4 {
-  font-size: 1.35em;
-  font-weight: 400;
-  text-align: center;
+  font-size: 1em;
+  font-weight: 100;
+  text-align: left;
 }
 
 img {
@@ -592,13 +592,16 @@ footer .copyright {
   width: 100%;
 }
 /*Prototype GRO*/
-#project.prototype_ {
+/*#project.prototype_ {
   position: relative;
   border-bottom: 0px solid #f3ecee;
   display: inline-block;
   width: 100%;
 }
-
+*/
+#project .duration {
+  position: center;
+}
 #process {
   padding-bottom: 25px;
   border-bottom: 1px solid #f3ecee;
@@ -673,7 +676,7 @@ Medium
   nav {
     width: auto;
     float: right;
-    margin-top: 1px;
+    margin-top: 25px;
   }
 
   nav > ul {
