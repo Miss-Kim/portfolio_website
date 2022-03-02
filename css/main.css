@@ -1,3 +1,31 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@MajaV 
+Miss-Kim
+/
+portfolio_website
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+portfolio_website/css/main.css
+@Miss-Kim
+Miss-Kim CSS added for overall page. working on GRO now
+Latest commit 3b4768c 42 minutes ago
+ History
+ 1 contributor
+790 lines (670 sloc)  11.8 KB
+   
 * {
   box-sizing: border-box;
 }
@@ -55,6 +83,12 @@ header {
   width: 100%;
 }
 
+/*
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
 nav ul {
   list-style-type: none;
 }
@@ -63,6 +97,93 @@ nav ul li {
   margin: 0 20px;
   display: inline-block;
 }
+
+
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li > a {
+  display: inline-block;
+  padding: 0 15px;
+  color: #f5f8ed;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+*/
+
+
+ 
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+
+ 
+.navtoggle.responsive li  {
+  display: block;
+}    
+  
+    
+ .navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 12px 0;
+  border-top: 1px solid rgb(79, 122, 165);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+    
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+      color: #4a4a4a;
+}
+
+nav > ul > li > a:hover {
+ color:#868B96 
+}
+
+
+ 
+
+
+/*
+
 
 nav > ul > li > a {
   padding: 0 15px;
@@ -77,18 +198,24 @@ nav > ul > li > a:hover,
 a.focus {
   color: #1b1a1b;
   text-decoration: underline; /* Underlining when hovering over a link */
+
+/*
   display: inline-block;
-}
+} */
+
+/*
 nav > ul > li > a:visited {
-  /* visited link */
+ 
   color: #706d6d;
   display: inline-block;
 }
 nav > ul > li > a:active {
-  /* selected link */
+ 
   color: #706d6d;
   display: inline-block;
 }
+*/
+
 /*main*/
 
 main {
@@ -115,29 +242,7 @@ main {
   line-height: 2.5em;
 }
 
-nav {
-  display: inline-block;
-  width: 100%;
-}
 
-nav > ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-nav > ul > li {
-  display: inline-block;
-  list-style-type: none;
-  padding: 0;
-}
-
-nav > ul > li > a {
-  display: inline-block;
-  padding: 0 15px;
-  color: #f5f8ed;
-  text-transform: uppercase;
-  text-decoration: none;
-}
 
 main {
   padding-top: 119px;
@@ -198,9 +303,9 @@ h3 {
   font-weight: 300;
 }
 h4 {
-  font-size: 1em;
-  font-weight: 100;
-  text-align: left;
+  font-size: 1.35em;
+  font-weight: 400;
+  text-align: center;
 }
 
 img {
@@ -375,37 +480,6 @@ footer .copyright {
   margin: auto;
 }
 
-.navtoggle li:not(:last-child) {
-  display: none;
-}
-
-.navtoggle,
-.navtoggle.responsive {
-  position: relative;
-}
-
-/* our hamburger menu */
-.navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  padding-right: 0;
-  top: 2px;
-  font-size: 20px;
-}
-
-.navtoggle.responsive nav {
-  padding: 24px 0 0;
-}
-
-.navtoggle.responsive li {
-  display: block;
-  padding: 10px 0;
-  border-top: 1px solid #f3ecee;
-}
-
-.navtoggle.responsive li:last-child {
-  padding: 0 0 10px;
-}
 /*abut pge*/
 /* About page */
 #about p,
@@ -486,48 +560,7 @@ footer .copyright {
   margin: 15px 0 5px;
 }
 
-/* Medium devices (1024px or smaller) */
-@media only screen and (max-width: 1024px) {
-  #about .flexbox.title {
-    height: 335px;
-  }
 
-  #about .headshot {
-    height: 220px;
-  }
-
-  #about .headshot img {
-    height: 220px;
-    width: auto;
-    margin-left: 189;
-    left: 50%;
-  }
-
-  #about .container.about {
-    padding: 10px 15px 0;
-  }
-
-  #about .intro {
-    padding: 0 32px 0 10px;
-  }
-
-  #about .intro h1 {
-    margin-bottom: 13px;
-  }
-
-  #about .story h2 {
-    margin: 30px 0 5px;
-  }
-
-  #about .skills .flexbox {
-    justify-content: space-evenly;
-    padding-left: 0;
-  }
-
-  #about main {
-    margin-bottom: 20px;
-  }
-}
 
 /* Small devices (640px and smaller) */
 @media only screen and (max-width: 640px) {
@@ -583,6 +616,15 @@ footer .copyright {
   }
 }
 
+
+
+
+
+
+
+
+
+
 /*about page ends*/
 
 #project {
@@ -592,16 +634,13 @@ footer .copyright {
   width: 100%;
 }
 /*Prototype GRO*/
-/*#project.prototype_ {
+#project.prototype_ {
   position: relative;
   border-bottom: 0px solid #f3ecee;
   display: inline-block;
   width: 100%;
 }
-*/
-#project .duration {
-  position: center;
-}
+
 #process {
   padding-bottom: 25px;
   border-bottom: 1px solid #f3ecee;
@@ -673,6 +712,8 @@ Medium
     height: auto;
   }
 
+    
+    
   nav {
     width: auto;
     float: right;
@@ -716,6 +757,53 @@ Medium
     margin-top: 20px;
   }
 }
+
+
+
+/* Medium devices (1024px or smaller) */
+@media only screen and (max-width: 1024px) {
+  #about .flexbox.title {
+    height: 335px;
+  }
+
+  #about .headshot {
+    height: 220px;
+  }
+
+  #about .headshot img {
+    height: 220px;
+    width: auto;
+    margin-left: 189;
+    left: 50%;
+  }
+
+  #about .container.about {
+    padding: 10px 15px 0;
+  }
+
+  #about .intro {
+    padding: 0 32px 0 10px;
+  }
+
+  #about .intro h1 {
+    margin-bottom: 13px;
+  }
+
+  #about .story h2 {
+    margin: 30px 0 5px;
+  }
+
+  #about .skills .flexbox {
+    justify-content: space-evenly;
+    padding-left: 0;
+  }
+
+  #about main {
+    margin-bottom: 20px;
+  }
+}
+
+
 
 /* ==============================
 Large devices (1024px or larger)
@@ -791,3 +879,16 @@ X-large devices (1440px or larger)
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete
