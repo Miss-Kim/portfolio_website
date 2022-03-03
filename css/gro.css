@@ -23,6 +23,10 @@ h5.research p {
   color: #fff8e5;
 }
 
+h2.persona {
+  text-align: left;
+  color: #039da1;
+}
 hr.grobreak {
   border: 1px solid #039da1;
   width: 1200px;
