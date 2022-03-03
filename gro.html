@@ -40,6 +40,7 @@
     <link href="css/fontawesome.css" rel="stylesheet" />
 
     <link href="css/main.css" rel="stylesheet" />
+    <link href="css/gro.css" rel="stylesheet" />
     <!--favicon-->
     <link
       href="img/favicon_io/favicon-32x32.png"
@@ -55,9 +56,8 @@
     />
   </head>
   <body>
-     <!-- for the header-->
+    <!-- for the header-->
     <header>
-     
       <div class="container">
         <div class="navtoggle" id="myNavtoggle"></div>
         <a href="index.html">
@@ -67,9 +67,13 @@
         <nav class="navigation">
           <ul>
             <li><a class="navlinks" href="index.html">Projects</a></li>
-          
+
             <li><a class="navlinks" href="about.html">About </a></li>
-            <li><a class="navlinks"  href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li>
+              <a class="navlinks" href="#contact" onclick="menuToggle()"
+                >Contact</a
+              >
+            </li>
             <li>
               <a href="javascript:void(0);" class="icon" onclick="menuToggle()"
                 ><i class="fas fa-bars"></i
@@ -83,9 +87,7 @@
     <main>
       <div id="project">
         <div class="container">
-         
           <!-- container/wrapper)-->
-          <h1>⌈GRO⌉ responsive e-wallet mobile app</h1>
 
           <picture class="imagegro">
             <source
@@ -99,148 +101,163 @@
               alt="GRO Hero Mockup"
             />
           </picture>
+          <h1><strong> ⎡GRO⎦</strong> responsive e-wallet mobile app</h1>
           <p>
-            Gro is an responsive mobile payment app that allows users to shop both online
-            and in-store (touchless), transfer, receive and split the money with
-            others who don't use the same e-wallet app.
+            Gro is an responsive mobile payment app that allows users to shop
+            both online and in-store (touchless), transfer, receive and split
+            the money with others who don't use the same e-wallet app.
           </p>
         </div>
       </div>
       <div class="overview">
         <div class="container">
-        
-        <h2>Overview</h2>
-        <p>So,What Exactly is <em>GRO</em>?</p>
-        <p>
-          <em>GRO</em> Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Facilis molestias accusamus, fuga quae distinctio laudantium
-          itaque mollitia nobis voluptas facere quidem saepe odit fugit
-          voluptate? Quia earum eius vitae recusandae.
-        </p>
-        <!--row for columns-->
+          <h2 class="gro-overview">Overview</h2>
+          <p>So, What Exactly is <strong>GRO</strong>?</p>
 
-        <div class="row">
-          <div class="col-md-6">
-            <!--first columns-->
-            <h3>My Role</h3>
-            <p>UX Research, UX/UI Designer</p>
-            <h4>Tools I used:
-            <p><ul>
-              <li>Pen and Paper</li>
-              <li>InVision</li>
-              <li>Balsamiq</li>
-              <li>UsabilityHub</li>
-              <li>Google Docs</li>
-              <li>FIGMA</li>
-            </ul></p></h4>
-          </div>
-        
-          <div class="row">
-          <div class="col-md-6">
-            <h3>MY DESIGN PROCESS</h3>
-            <h4><ul>
-              <li>Discovery and Research</li>
-              <li>Information Architecture</li>
-              <li>Wireframes and Testing</li>
-              <li>UI Exploration and Testing</li>
-              <li>low-fi to high-fi prototypes</li>
-              <li>Mockups and Presentatition</li>
-              <li>Creating Design System and Style Guide</li>
-            </ul></h4>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <h3>Type of Project</h3>
-            <p>Mobile App, Brand Concept</p>
-         
-        </div>
+          <p>
+            <strong>GRO</strong> is a responsive e-wallet app that allows users
+            to quickly and safely store their bank information and credit card
+            information in one place, enabling users to shop online and in-store
+            (touchless feature). Also, give users the freedom to split bills
+            with others, send and request money with those who don't use the
+            same e-wallet.
+          </p>
 
+          <!--row for columns-->
+
+          <div id="gro-role">
             <div class="row">
-              <div class="col-md-6">
+              <div class="projecttype col-md-6">
+                <h3>My Role</h3>
+                <p>UX Researcher, UX/UI Designer</p>
+                <h3>Type of Project</h3>
+                <p>Mobile app, brand concept</p>
+              </div>
+              <div class="duration col-md-6">
+                <!--first columns-->
                 <h3>Duration</h3>
                 <p>Five Months</p>
               </div>
-            </div>
-      </div>
-        </div>
+              <div class="designprocess col-md-6">
+                <!--first columns-->
+                <h3>My Design Process</h3>
 
+                <ul>
+                  <li>Discovery and Research</li>
+                  <li>Information Architecture</li>
+                  <li>Wireframes (low - hifidelity frames)</li>
+                  <li>Protoytping</li>
+
+                  <li>Mockups</li>
+                  <li>User Flows</li>
+
+                  <li>User Personas / Moodboards</li>
+                  <li>UI Exploration and Testing</li>
+                </ul>
+              </div>
+              <div class="row">
+                <div class="tools col-md-6">
+                  <!--first columns-->
+                  <h3>Tools Used</h3>
+
+                  <ul>
+                    <li>Pen & Paper</li>
+                    <li>Figma</li>
+                    <li>InVision</li>
+                    <li>Sketch</li>
+
+                    <li>Balsamiq</li>
+
+                    <li>Google Tools</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="grobreak" />
       <!-- Overview Ends-->
-      <div>
-        <div>
+      <div class="discovery">
+        <div class="container">
           <!-- row with columns for projects-->
 
-          <h2>Discovery Phase</h2>
-          <h5>PROBLEM STATEMENT</h5>
+          <h2 class="discovery">Discovery Phase</h2>
+          <h5 class="discovery">PROBLEM STATEMENT</h5>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-            eveniet architecto praesentium doloremque voluptate quisquam quis
-            autem facere numquam totam obcaecati, provident magni excepturi
-            necessitatibus ad error dolorum, quidem iure.
+            E-wallet app needs a new way to securely store multiple cards, and
+            bank information, whilst keeping track of all financial transactions
+            and expenses. Also allows users to safely "transfer and request "
+            money to others who does not use the same e-wallet app. .
           </p>
-          <h5>SOLUTIONS</h5>
+
+          <h5 class="discovery">SOLUTIONS</h5>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque
-            modi molestiae ex officiis eos quis suscipit ipsa? Et dolores
-            corporis iure saepe sequi eaque, maiores ratione excepturi minus
-            unde ipsa.
-            <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-            odio sed iure atque veniam libero soluta possimus architecto, ipsam
-            corporis fugiat exercitationem, assumenda, ex ratione ad itaque
-            quibusdam natus voluptatibus!
-          </p>
-          <h3>Discovery and Research</h3>
-          <strong>WHO</strong>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Reprehenderit quidem libero cumque facilis. Praesentium id dicta est
-            rerum labore vero voluptatibus, reiciendis dolor. Odit soluta
-            eveniet voluptatum voluptatem, officia ipsum.
-          </p>
-          <br />
-          <strong>WHERE</strong>
-          <p>Primary use will mostly be on mobile phone, on the go.</p>
-          <br />
-          <strong>WHEN</strong>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi eius
-            tempore maxime magnam maiores minima, voluptatem fugiat? Odit id
-            officiis eum repudiandae, hic quidem, dolores laborum, unde repellat
-            dicta modi!
-          </p>
-          <br />
-          <strong>WHAT</strong>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-            provident sit dignissimos quam vero laborum eum deserunt omnis ex,
-            qui, minima tempore voluptates, libero repellat mollitia dolore?
-            Harum, voluptatem? Dolores.
-          </p>
-          <br />
-          <strong>WHY</strong>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-            commodi itaque dolorum ex. Voluptatibus officiis explicabo
-            veritatis, cumque magni, blanditiis exercitationem voluptate nemo
-            expedita nobis similique minima veniam ad esse?
-          </p>
-          <br />
-          <strong>HOW</strong>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-            iure nemo, autem pariatur omnis repellendus modi quae ipsam, id
-            optio eaque et cupiditate cumque adipisci veritatis totam quod
-            delectus quis.
+            Create a universal e-wallet that can communicate with other apps,
+            also allow users to store multiple bank information and credit cards
+            information in one place. This way, we can offer users better
+            control of their finance, freedom to perform online transactions
+            with other receivers without having to use multiple e-wallet and
+            perform touchless in-store payments.
           </p>
         </div>
-        <!--Discovery Ends-->
-        <br />
-
-        <!--row for columns-->
       </div>
-      </div></div>
+      <hr class="grobreak" />
+
+      <div id="Research">
+        <div class="container">
+          <h2 class="research">Discovery and Research</h2>
+
+          <div class="row">
+            <div class="whowherewhen col-md-6">
+              <h5 class="research">WHO?</h5>
+              <p>
+                Age between 18 - 40, busy young professional looking for a
+                universal e-wallet that would help save time and money while
+                security is the greatest concern.
+              </p>
+
+              <h5 class="research">WHERE?</h5>
+              <p>Primary use will mostly be on mobile phone, on the go.</p>
+
+              <h5 class="research">WHEN?</h5>
+              <p>
+                Anytime a user needs an online checkout or in-store checkout.
+                Reminder notification even when you are not using the app.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="whatwhyhow col-md-6">
+            <h5 class="research">WHAT?</h5>
+            <p>
+              Empower users to be more aware of their spending habits, gain more
+              control of their finance and offer reminders to stay on top of
+              their budget.
+            </p>
+
+            <h5 class="research">WHY?</h5>
+            <p>
+              Save time, save money, never late payment fees, easy to follow
+              instructions, touchless and financial freedom.
+            </p>
+
+            <h5 class="research">HOW?</h5>
+            <p>
+              Give suggestions to save up, notify when bills are soon to due,
+              easy to follow purchased history available to users with diagrams
+              / charts.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <hr class="grobreak" />
+
+      <!--Discovery Ends-->
     </main>
+
     <footer>
       <div id="contact" class="container">
         <h2>Get in Touch</h2>
