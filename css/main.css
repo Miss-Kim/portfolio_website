@@ -1,4 +1,4 @@
-Skip to content
+/*Skip to content
 Search or jump to…
 Pull requests
 Issues
@@ -24,8 +24,8 @@ Miss-Kim CSS added for overall page. working on GRO now
 Latest commit 3b4768c 42 minutes ago
  History
  1 contributor
-790 lines (670 sloc)  11.8 KB
-   
+790 lines (670 sloc)  11.8 KB */
+
 * {
   box-sizing: border-box;
 }
@@ -47,9 +47,9 @@ img {
   width: 100%;
 }
 hr {
-  border: 1px solid #f3ecee;
+  border: 1px solid #c9456a;
   width: 270px;
-  margin: 30 auto;
+  margin: 0 auto;
 }
 
 .flexbox {
@@ -83,45 +83,11 @@ header {
   width: 100%;
 }
 
-/*
 nav {
   display: inline-block;
   width: 100%;
 }
 
-nav ul {
-  list-style-type: none;
-}
-
-nav ul li {
-  margin: 0 20px;
-  display: inline-block;
-}
-
-
-
-nav > ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-nav > ul > li {
-  display: inline-block;
-  list-style-type: none;
-  padding: 0;
-}
-
-nav > ul > li > a {
-  display: inline-block;
-  padding: 0 15px;
-  color: #f5f8ed;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-*/
-
-
- 
 nav > ul {
   list-style-type: none;
   padding: 0;
@@ -131,8 +97,8 @@ nav > ul {
   display: none;
 }
 
-
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -143,78 +109,35 @@ nav > ul {
   font-size: 20px;
 }
 
-
- 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
-}    
-  
-    
- .navtoggle.responsive nav {
+}
+
+.navtoggle.responsive nav {
   padding: 24px 0 0;
 }
 
-
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 12px 0;
   border-top: 1px solid rgb(79, 122, 165);
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
-    
 
 nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   text-decoration: none;
-      color: #4a4a4a;
+  color: #4a4a4a;
 }
 
 nav > ul > li > a:hover {
- color:#868B96 
+  color: #868b96;
 }
-
-
- 
-
-
-/*
-
-
-nav > ul > li > a {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #f5f8ed;
-  list-style-type: none;
-  padding: 0;
-}
-
-nav > ul > li > a:hover,
-a.focus {
-  color: #1b1a1b;
-  text-decoration: underline; /* Underlining when hovering over a link */
-
-/*
-  display: inline-block;
-} */
-
-/*
-nav > ul > li > a:visited {
- 
-  color: #706d6d;
-  display: inline-block;
-}
-nav > ul > li > a:active {
- 
-  color: #706d6d;
-  display: inline-block;
-}
-*/
 
 /*main*/
 
@@ -242,34 +165,30 @@ main {
   line-height: 2.5em;
 }
 
-
-
 main {
   padding-top: 119px;
 }
 
-.navLinks {
+.navlinks {
   padding: 5px;
 }
 
-.navLinks:hover,
-.navLinks:focus {
-  color: #aa2441;
-  background-color: #1a1b1b;
+.navlinks:hover,
+.navlinks:focus {
+  color: #fff;
+
   border-radius: 10px;
 }
 
-.navLinks:visited {
-  text-decoration: underline;
-  /* visited link */
-  /* color: #aa2441; */
+.navlinks:visited {
+  color: #b4818c;
   /* We suggest using a different color here */
-  /* color: gray; */
+  /* color: white; */
 }
 
-.navLinks:active {
+.navlinks:active {
   /* selected link */
-  color: #aa2441;
+  color: #b43853;
   font-weight: 700;
 }
 
@@ -283,7 +202,7 @@ h3,
 h4,
 p {
   font-family: "Montserrat", sans-serif;
-  line-height: 1.5;
+  line-height: 1.4;
   margin: 20px;
 }
 h1 {
@@ -296,12 +215,18 @@ h1 {
 h2 {
   font-size: 2.25em;
   font-weight: 700;
+  text-align: center;
+}
+h2.project {
+  text-align: left;
+  color: #df798b;
 }
 
 h3 {
   font-size: 1.75em;
   font-weight: 300;
 }
+
 h4 {
   font-size: 1.35em;
   font-weight: 400;
@@ -369,11 +294,12 @@ a {
 }
 
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
   background-color: #df798b;
   color: #f5f8ed; /* needed to override the default link color */
   font-weight: 700;
   padding: 10px;
+  margin-left: 20px;
   border-radius: 3px;
   border-bottom: 2px solid #f3ecee; /* width of the border, type, color */
   transition-duration: 0.2s;
@@ -560,8 +486,6 @@ footer .copyright {
   margin: 15px 0 5px;
 }
 
-
-
 /* Small devices (640px and smaller) */
 @media only screen and (max-width: 640px) {
   #about .flexbox.title {
@@ -616,16 +540,23 @@ footer .copyright {
   }
 }
 
-
-
-
-
-
-
-
-
-
 /*about page ends*/
+#skillsandtools {
+  position: relative;
+  display: flexbox;
+  text-align: left;
+  margin: auto;
+  width: 100%;
+}
+#skillsandtools .tools {
+  padding-left: 150px;
+  margin-right: 10%;
+}
+
+#skillsandtools .skills {
+  padding-left: 100px;
+  margin-left: 10%;
+}
 
 #project {
   padding-bottom: 25px;
@@ -633,13 +564,8 @@ footer .copyright {
   display: inline-block;
   width: 100%;
 }
+
 /*Prototype GRO*/
-#project.prototype_ {
-  position: relative;
-  border-bottom: 0px solid #f3ecee;
-  display: inline-block;
-  width: 100%;
-}
 
 #process {
   padding-bottom: 25px;
@@ -712,12 +638,11 @@ Medium
     height: auto;
   }
 
-    
-    
   nav {
     width: auto;
     float: right;
     margin-top: 25px;
+    color: white;
   }
 
   nav > ul {
@@ -737,8 +662,13 @@ Medium
     font-size: 18px;
   }
 
-  .col-md-6 {
+  .column.col-md-6.col-lg-5 {
     width: 50%;
+  }
+
+  .column.col-md-6.col-lg-7 {
+    width: 45%;
+    position: relative;
   }
 
   .navtoggle li:not(:last-child) {
@@ -758,7 +688,25 @@ Medium
   }
 }
 
+.navlinks {
+  padding: 5px;
+}
 
+.navlinks:hover,
+.navlinks:focus {
+  color: #b4818c;
+}
+
+.navlinks:visited {
+  text-decoration: underline;
+  color: #b4818c;
+}
+
+.navlinks:active {
+  /* selected link */
+  color: #b4818c;
+  font-weight: 700;
+}
 
 /* Medium devices (1024px or smaller) */
 @media only screen and (max-width: 1024px) {
@@ -802,8 +750,6 @@ Medium
     margin-bottom: 20px;
   }
 }
-
-
 
 /* ==============================
 Large devices (1024px or larger)
@@ -877,9 +823,9 @@ X-large devices (1440px or larger)
 }
 
 .cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
+  animation: 34s cloud-move-reverse infinite alternate yellow;
 }
-© 2022 GitHub, Inc.
+/*© 2022 GitHub, Inc.
 Terms
 Privacy
 Security
@@ -891,4 +837,4 @@ API
 Training
 Blog
 About
-Loading complete
+Loading complete*/

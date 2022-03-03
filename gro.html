@@ -54,22 +54,22 @@
       rel="stylesheet"
     />
   </head>
-  <body class="GRO">
+  <body>
+     <!-- for the header-->
     <header>
-      <!-- for the header-->
+     
       <div class="container">
         <div class="navtoggle" id="myNavtoggle"></div>
         <a href="index.html">
           <img src="img/logo3.png" alt="Logo" class="logo"
         /></a>
 
-        <nav>
+        <nav class="navigation">
           <ul>
-            <li><a href="index.html">Projects</a></li>
-            <li><a href="gro.html">⌈GRO⌉</a></li>
-            <li><a href="lingu.html">⌈Lingu⌉</a></li>
-            <li><a href="about.html">About </a></li>
-            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a class="navlinks" href="index.html">Projects</a></li>
+          
+            <li><a class="navlinks" href="about.html">About </a></li>
+            <li><a class="navlinks"  href="#contact" onclick="menuToggle()">Contact</a></li>
             <li>
               <a href="javascript:void(0);" class="icon" onclick="menuToggle()"
                 ><i class="fas fa-bars"></i
@@ -79,12 +79,13 @@
         </nav>
       </div>
     </header>
+    <!--For the body-->
     <main>
-      <div id="hero">
+      <div id="project">
         <div class="container">
          
           <!-- container/wrapper)-->
-          <h1>responsive e-wallet ⌈GRO⌉</h1>
+          <h1>⌈GRO⌉ responsive e-wallet mobile app</h1>
 
           <picture class="imagegro">
             <source
@@ -99,18 +100,19 @@
             />
           </picture>
           <p>
-            Responsive mobile payment app that allows users to shop both online
+            Gro is an responsive mobile payment app that allows users to shop both online
             and in-store (touchless), transfer, receive and split the money with
-            others who don't use the same e-wallet.
+            others who don't use the same e-wallet app.
           </p>
         </div>
       </div>
-      <div class="groproject">
-        <!-- row with columns for projects-->
+      <div class="overview">
+        <div class="container">
+        
         <h2>Overview</h2>
         <p>So,What Exactly is <em>GRO</em>?</p>
         <p>
-          <em>lingu</em> Lorem ipsum dolor sit amet consectetur adipisicing
+          <em>GRO</em> Lorem ipsum dolor sit amet consectetur adipisicing
           elit. Facilis molestias accusamus, fuga quae distinctio laudantium
           itaque mollitia nobis voluptas facere quidem saepe odit fugit
           voluptate? Quia earum eius vitae recusandae.
@@ -237,6 +239,7 @@
 
         <!--row for columns-->
       </div>
+      </div></div>
     </main>
     <footer>
       <div id="contact" class="container">

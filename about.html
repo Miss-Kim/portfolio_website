@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <!--Global site tag (gtag.js) - Google Analytics -->
@@ -21,9 +21,10 @@
     <meta name="author" content="Kim Ivanova" />
     <meta
       name="description"
-      content="Portfolio of Kim Ivanova, a UX Designer with frontend specialisation based Oslo, Norway">
-    
-      <!--responsivness-->
+      content="Portfolio of Kim Ivanova, a UX Designer with frontend specialisation based Oslo, Norway"
+    />
+
+    <!--responsivness-->
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>About Kim</title>
@@ -61,20 +62,22 @@
     <header>
       <!-- for the header-->
       <div class="container">
-        
         <div class="navtoggle" id="myNavtoggle">
           <a href="index.html">
             <img src="img/logo3.png" alt="Logo" class="logo"
           /></a>
 
-          <nav>
+          <nav class="navigation">
             <ul>
-              <li><a href="index.html">Projects</a></li>
-              <li><a href="gro.html">⌈GRO⌉</a></li>
-              <li><a href="lingu.html">⌈Lingu⌉</a></li>
-              <li><a href="about.html">About </a></li>
-             
-              <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+              <li><a class="navlinks" href="index.html">Projects</a></li>
+
+              <li><a class="navlinks" href="about.html">About </a></li>
+
+              <li>
+                <a class="navlinks" href="#contact" onclick="menuToggle()"
+                  >Contact</a
+                >
+              </li>
               <li>
                 <a
                   href="javascript:void(0);"
@@ -90,17 +93,18 @@
     </header>
 
     <main>
-    <div id="hero">
+      <div id="hero">
         <div class="container">
           <!-- container/wrapper)-->
           <div class="row">
             <h1>ABOUT ME</h1>
-            <p>A great user experience is the result of proper execution of both design and code.
-              I can create both.
-              <br>
-              I am an innovative UI/UX designer and frontend web developer from Oslo, Norway. 
-         
-              </p>
+            <p>
+              A great user experience is the result of proper execution of both
+              design and code. <br />I can create both.
+              <br />
+              I am an innovative UI/UX designer and frontend web developer from
+              Oslo, Norway.
+            </p>
 
             <a href="img/files/cv.pdf" class="button">Download My CV</a>
           </div>
@@ -110,19 +114,15 @@
 
       <div class="container">
         <div class="row">
-          <div class="imgWrapper"
-            >
+          <div class="imgWrapper">
             <picture
               ><source srcset="img/mypic/kyoto.JPG" media="(max-width:767px)" />
               <img src="img/mypic/kyotosmall.jpeg" alt="profile picture" />
             </picture>
           </div>
 
-          <div class="col-md-6">
-           
-
-          </div>
-          <div class="story col-lg-12 "> 
+          <div class="col-md-6"></div>
+          <div class="story col-lg-12">
             <h1>My Story</h1>
 
             <p>
@@ -154,50 +154,53 @@
           </div>
         </div>
         <!--row for columns-->
+        <div id="skillsandtools">
+          <div class="row">
+            <div class="skills col-md-6">
+              <!--first columns-->
+              <h3>Relevant Skills</h3>
 
-        <div class="row">
-          <div class="skills col-md-6">
-            <!--first columns-->
-            <h3>Relevant Skills</h3>
+              <ul>
+                <li>UI/UX Design</li>
+                <li>Wireframing</li>
+                <li>Protoytping</li>
+                <li>Competitor Research</li>
+                <li>User Testing</li>
+                <li>User Flows</li>
+                <li>Information Architecture</li>
+                <li>User Personas / Moodboards</li>
+                <li>Front End Developer</li>
+                <li>Concept Creator</li>
+                <li>Visual Design</li>
+                <li>Concept Creator</li>
 
-            <ul>
-              <li>UI/UX Design</li>
-              <li>Wireframing</li>
-              <li>Protoytping</li>
-              <li>Competitor Research</li>
-              <li>User Testing</li>
-              <li>User Flows</li>
-              <li>Information Architecture</li>
-              <li>User Personas / Moodboards</li>
-              <li>Front End Developer</li>
-              <li>Concept Creator</li>
-              <li>Visual Design</li>
-              <li>Concept Creator</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+              </ul>
+            </div>
+            <div class="row">
+              <div class="tools col-md-6">
+                <!--first columns-->
+                <h3>Tools I Used</h3>
 
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-            </ul>
-          </div>
-
-          <div class="tools col-md-6">
-            <h3>Tools I Use</h3>
-            <ul>
-              <li>Figma</li>
-              <li>InVision</li>
-              <li>Sketch</li>
-              <li>Miro</li>
-              <li>Balsamiq</li>
-              <li>Visual Studio Code</li>
-              <li>Google Tools</li>
-              <li>GitHub</li>
-            </ul>
+                <ul>
+                  <li>Figma</li>
+                  <li>InVision</li>
+                  <li>Sketch</li>
+                  <li>Miro</li>
+                  <li>Balsamiq</li>
+                  <li>Visual Studio Code</li>
+                  <li>Google Tools</li>
+                  <li>GitHub</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-     
-      <!--end container-->
+      </div>
     </main>
-
+    <!--end container-->
     <footer>
       <div id="contact" class="container">
         <h2>Get in Touch</h2>

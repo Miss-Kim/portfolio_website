@@ -63,13 +63,16 @@
             <img src="img/logo3.png" alt="Logo" class="logo"
           /></a>
 
-          <nav>
+          <nav class="navigation">
             <ul>
-              <li><a href="index.html">Projects</a></li>
-              <li><a href="gro.html">⌈GRO⌉</a></li>
-              <li><a href="lingu.html">⌈Lingu⌉</a></li>
-              <li><a href="about.html">About </a></li>
-              <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+              <li><a class="navlinks" href="index.html">Projects</a></li>
+
+              <li><a class="navlinks" href="about.html">About </a></li>
+              <li>
+                <a class="navlinks" href="#contact" onclick="menuToggle()"
+                  >Contact</a
+                >
+              </li>
               <li>
                 <a
                   href="javascript:void(0);"
@@ -87,9 +90,9 @@
       <div id="hero">
         <div class="container">
           <!-- container/wrapper)-->
-          <h1>Case Study ⌈GRO⌉</h1>
+          <h1>Case Study Lingu</h1>
 
-          <picture class="NEW">
+          <picture class="imagelingu">
             <source srcset="img/lingu_large.png" media="(max-width:767px)" />
             <img
               src="img/lingu_small.png"
@@ -100,7 +103,7 @@
           </picture>
         </div>
       </div>
-      <div>
+      <div class="linguproject">
         <!-- row with columns for projects-->
         <h2>Overview</h2>
         <p>So,What Exactly is <em>Lingu</em>?</p>
