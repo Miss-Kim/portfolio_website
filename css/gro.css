@@ -8,25 +8,49 @@ h2.discovery {
   text-align: left;
   color: #039da1;
 }
+
+h2.research {
+  text-align: left;
+  color: #039da1;
+}
 h5.discovery {
   text-align: auto;
   color: #fff8e5;
   margin: 20 auto;
   padding-left: 20px;
 }
-h2.research {
+
+h5.research {
   text-align: left;
-  color: #039da1;
-}
-h5.research p {
-  text-align: auto;
   color: #fff8e5;
+  margin: 20 auto;
+  padding-left: 20px;
 }
 
 h2.persona {
   text-align: left;
   color: #039da1;
 }
+
+h2.problem {
+  text-align: left;
+  color: #039da1;
+}
+h2.lowfi {
+  text-align: left;
+  color: #039da1;
+}
+h2.ui {
+  text-align: left;
+  color: #039da1;
+}
+h5.ui {
+  text-align: left;
+  color: #fff8e5;
+  margin: 20 auto;
+  padding-left: 20px;
+}
+
 hr.grobreak {
   border: 1px solid #039da1;
   width: 1200px;
@@ -47,3 +71,46 @@ hr.grobreak {
   color: #fff8e5;
 }
 /*research phase*/
+
+.www.col-md-6 {
+  width: 50%;
+  height: auto;
+}
+
+.wwh.col-md-6 {
+  width: 50%;
+  height: auto;
+}
+/*infomap phase*/
+h2.infoarch {
+  text-align: left;
+  color: #039da1;
+}
+
+.ollipersona {
+  width: 50%;
+  height: auto;
+}
+
+.knutpersona {
+  width: 50%;
+  height: auto;
+}
+
+.colorpaletteimg {
+  width: 100%;
+  height: auto;
+}
+
+/*infomap phase*/
+
+@media only screen and (max-width: 640px) {
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+}

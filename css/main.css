@@ -342,10 +342,9 @@ a {
   border: 2px solid #f3ecee;
 }
 
-#work.row {
+#project.row {
   margin: 25px 0;
   padding-bottom: 25px;
-  border-bottom: 1px solid #f3ecee;
 }
 
 /* Footer */
@@ -393,6 +392,9 @@ footer .copyright {
   display: table;
 }
 
+.row {
+  width: auto;
+}
 .vector-animation {
   width: 100%;
   max-width: 100%;
@@ -539,13 +541,7 @@ footer .copyright {
 }
 
 /*about page ends*/
-#skillsandtools {
-  position: relative;
-  display: flexbox;
-  text-align: left;
-  margin: auto;
-  width: 100%;
-}
+
 #skillsandtools .tools {
   padding-left: 150px;
   margin-right: 10%;
